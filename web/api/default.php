@@ -2,4 +2,4 @@
 
 require '../vendor/autoload.php';
 
-\Danilocgsilva\Backupphp::hWorld();
+\Danilocgsilva\Backupphp::backup();

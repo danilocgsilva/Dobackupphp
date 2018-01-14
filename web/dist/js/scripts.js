@@ -10252,12 +10252,28 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-'use strict';
+(function(){
+    'use strict';
 
+    $(document).ready(function() {
+        
+        var data = {};
+
+        data.host = $("#host");
+        data.user = $("#user");
+        data.dbname = $("#dbname");
+        data.pass = $("#pass");
+
+        window.data = data;
+        
+    });
+
+})()
 (function() {
 
-    function api() {
+    'use strict';
 
+    function api() {
         var url = window.location.href + '?action=api';
 
         $.ajax({
@@ -10268,14 +10284,20 @@ return jQuery;
             },
             error: function(xhr, status, error) {
                 alert('erro!');
+            },
+            complete: function() {
+                $("#api_button").removeClass('disabled');
             }
         });
     }
 
+
     $(document).ready(function() {
+
         $("#api_button").on('click', function(event) {
             event.preventDefault();
 
+            $(this).addClass('disabled');
             api();
         })
     })

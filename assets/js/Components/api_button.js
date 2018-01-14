@@ -1,9 +1,8 @@
-'use strict';
-
 (function() {
 
-    function api() {
+    'use strict';
 
+    function api() {
         var url = window.location.href + '?action=api';
 
         $.ajax({
@@ -14,14 +13,20 @@
             },
             error: function(xhr, status, error) {
                 alert('erro!');
+            },
+            complete: function() {
+                $("#api_button").removeClass('disabled');
             }
         });
     }
 
+
     $(document).ready(function() {
+
         $("#api_button").on('click', function(event) {
             event.preventDefault();
 
+            $(this).addClass('disabled');
             api();
         })
     })

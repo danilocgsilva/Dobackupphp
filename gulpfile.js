@@ -15,7 +15,8 @@ gulp.task('styles', () => {
 gulp.task('scripts', () => {
     return gulp.src([
         './node_modules/jquery/dist/jquery.js',
-        './assets/js/api_button.js'
+        './assets/js/boot.js',
+        './assets/js/Components/**/*.js'
     ])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./web/dist/js'));
