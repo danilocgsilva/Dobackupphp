@@ -21,6 +21,6 @@
         }
     ],
     "require": {
-        "danilocgsilva/backupphp": "0.0.1"
+        "Danilocgsilva/Backupphp": "0.0.5"
     }
 }

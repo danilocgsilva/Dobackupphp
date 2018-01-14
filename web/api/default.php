@@ -1,3 +1,5 @@
 <?php
 
-echo 'Good morning! I am an api!';
+require '../vendor/autoload.php';
+
+\Danilocgsilva\Backupphp::hWorld();

@@ -10257,7 +10257,19 @@ return jQuery;
 (function() {
 
     function api() {
-        alert('Now yes! Really!');
+
+        alert(url);
+
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function(data) {
+                alert('sucesso 2: ' + data);
+            },
+            error: function(xhr, status, error) {
+                alert('erro!');
+            }
+        });
     }
 
     $(document).ready(function() {
