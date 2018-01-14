@@ -4,7 +4,7 @@
 
     function api() {
 
-        alert(url);
+        var url = window.location.href + '?action=api';
 
         $.ajax({
             url: url,
