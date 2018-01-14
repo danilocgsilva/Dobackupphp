@@ -1,0 +1,11 @@
+{
+    "name": "danilocgsilva/dobackupphp",
+    "description": "A very simple web application to generate php backups through code",
+    "authors": [
+        {
+            "name": "Danilo Carlos de Góes Silva",
+            "email": "danilocgsilva@gmail.com"
+        }
+    ],
+    "require": {}
+}
