@@ -1,0 +1,46 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c3a0b56866f7b87129482a362c249372",
+    "packages": [
+        {
+            "name": "danilocgsilva/backupphp",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danilocgsilva/backupphp",
+                "reference": "fc573194f1ea3e594d4b49a06f61cba55dad321f"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "danilocgsilva\\backupphp\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Danilo Silva",
+                    "email": "danilocgsilva@gmail.com"
+                }
+            ],
+            "description": "Generates a sql file entirely trough php code",
+            "time": "2018-01-14T12:31:36+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
