@@ -20,7 +20,7 @@
                 alert('sucesso 2: ' + data);
             },
             error: function(xhr, status, error) {
-                alert('erro!');
+                alert('Erro! The server said: ' + xhr.responseText);
             },
             complete: function() {
                 $("#api_button").removeClass('disabled');
