@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ecb01ac8c475122eb8e4da95967889e",
+    "content-hash": "621544077f6297f4f30955b9153c2890",
     "packages": [
         {
             "name": "danilocgsilva/backupphp",
-            "version": "0.0.16",
+            "version": "0.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danilocgsilva/backupphp",
-                "reference": "2b86214e681c4e445c5bff52f2dd99348f87518d"
+                "reference": "fa03defb398a8167eca7f99fd9f36f8dc5bf1be2"
             },
             "type": "library",
             "autoload": {
@@ -32,7 +32,7 @@
                 }
             ],
             "description": "Generates a sql file entirely trough php code",
-            "time": "2018-01-15T18:47:37+00:00"
+            "time": "2018-01-15T19:25:55+00:00"
         }
     ],
     "packages-dev": [],
