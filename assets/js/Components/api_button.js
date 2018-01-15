@@ -8,6 +8,7 @@
         $.ajax({
             url: url,
             type: 'GET',
+            data = window.data,
             success: function(data) {
                 alert('sucesso 2: ' + data);
             },
