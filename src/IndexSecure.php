@@ -136,4 +136,21 @@ class IndexSecure
             }
         }
     }
+
+    /**
+     * Return an array containing just the databases values
+     *
+     * @return void
+     */
+    public function hostValues()
+    {
+        $hostValues = array();
+
+        $hostValues['host']   = $this->_getArray['host'];
+        $hostValues['user']   = $this->_getArray['user'];
+        $hostValues['dbname'] = $this->_getArray['dbname'];
+        $hostValues['pass']   = $this->_getArray['pass'];
+
+        return $hostValues;
+    }
 }

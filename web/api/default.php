@@ -2,4 +2,11 @@
 
 require '../vendor/autoload.php';
 
-\Danilocgsilva\Backupphp::backup();
+$valuesArray = $secure->hostValues();
+
+\Danilocgsilva\Backupphp::backup(
+    $valuesArray['host'],
+    $valuesArray['user'],
+    $valuesArray['dbname'],
+    $valuesArray['pass']
+);

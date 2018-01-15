@@ -10260,10 +10260,10 @@ return jQuery;
         var url = window.location.href + '?action=api';
 
         var userData = {
-            host: $("#host").val(),
-            host: $("#user").val(),
-            host: $("#dbname").val(),
-            host: $("#pass").val()
+            host:   $("#host").val(),
+            user:   $("#user").val(),
+            dbname: $("#dbname").val(),
+            pass:   $("#pass").val()
         }
 
         $.ajax({
