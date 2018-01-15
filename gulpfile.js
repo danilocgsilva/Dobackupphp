@@ -1,6 +1,12 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var sassruby = require('gulp-ruby-sass');
+var del = require('del');
+
+var configs = {
+    destSass: './web/dist/css',
+    destScripts: './web/dist/js'
+}
 
 gulp.task('styles', () => {
     return sassruby('./assets/sass/**/*.scss', {
@@ -9,17 +15,16 @@ gulp.task('styles', () => {
             './node_modules/bootstrap-sass/assets/stylesheets'
         ]
     })
-    .pipe(gulp.dest('./web/dist/css'));
+    .pipe(gulp.dest(configs.destSass));
 });
 
 gulp.task('scripts', () => {
     return gulp.src([
         './node_modules/jquery/dist/jquery.js',
-        './assets/js/boot.js',
         './assets/js/Components/**/*.js'
     ])
     .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('./web/dist/js'));
+    .pipe(gulp.dest(configs.destScripts));
 })
 
 gulp.task('watch', () => {
@@ -31,6 +36,11 @@ gulp.task('watch', () => {
             'default'
         ]
     );
+})
+
+gulp.task('del', () => {
+    del(configs.destSass);
+    del(configs.destScripts);
 })
 
 gulp.task('default', ['scripts', 'styles']);

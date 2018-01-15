@@ -10252,23 +10252,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-(function(){
-    'use strict';
-
-    $(document).ready(function() {
-        
-        var data = {};
-
-        data.host = $("#host");
-        data.user = $("#user");
-        data.dbname = $("#dbname");
-        data.pass = $("#pass");
-
-        window.data = data;
-        
-    });
-
-})()
 (function() {
 
     'use strict';
@@ -10276,10 +10259,17 @@ return jQuery;
     function api() {
         var url = window.location.href + '?action=api';
 
+        var userData = {
+            host: $("#host").val(),
+            host: $("#user").val(),
+            host: $("#dbname").val(),
+            host: $("#pass").val()
+        }
+
         $.ajax({
             url: url,
             type: 'GET',
-            data = window.data,
+            data: userData,
             success: function(data) {
                 alert('sucesso 2: ' + data);
             },
@@ -10290,6 +10280,8 @@ return jQuery;
                 $("#api_button").removeClass('disabled');
             }
         });
+
+        // console.log(window.data);
     }
 
 
@@ -10302,4 +10294,4 @@ return jQuery;
             api();
         })
     })
-})()
+})();
