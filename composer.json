@@ -1,26 +1,18 @@
 {
     "name": "danilocgsilva/dobackupphp",
     "description": "A very simple web application to generate php backups through code",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/danilocgsilva/backupphp"
-        }   
-    ],
     "autoload": {
         "psr-4": {
             "danilocgsilva\\dobackupphp\\": [
                 "src/"
             ]
         }
-    }, 
-    "authors": [
-        {
-            "name": "Danilo Carlos de Góes Silva",
-            "email": "danilocgsilva@gmail.com"
-        }
-    ],
+    },
+    "authors": [{
+        "name": "Danilo Carlos de Góes Silva",
+        "email": "danilocgsilva@gmail.com"
+    }],
     "require": {
-        "danilocgsilva/backupphp": "0.0.20"
+        "danilocgsilva/backupphp": "^1.0"
     }
 }

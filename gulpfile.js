@@ -10,29 +10,28 @@ var configs = {
 
 gulp.task('styles', () => {
     return sassruby('./assets/sass/**/*.scss', {
-        style: 'comporessed',
-        loadPath: [
-            './node_modules/bootstrap-sass/assets/stylesheets'
-        ]
-    })
-    .pipe(gulp.dest(configs.destSass));
+            style: 'comporessed',
+            loadPath: [
+                './node_modules/bootstrap-sass/assets/stylesheets'
+            ]
+        })
+        .pipe(gulp.dest(configs.destSass));
 });
 
 gulp.task('scripts', () => {
     return gulp.src([
-        './node_modules/jquery/dist/jquery.js',
-        './assets/js/Components/**/*.js'
-    ])
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest(configs.destScripts));
+            './node_modules/jquery/dist/jquery.js',
+            './assets/js/Components/**/*.js'
+        ])
+        .pipe(concat('scripts.js'))
+        .pipe(gulp.dest(configs.destScripts));
 })
 
 gulp.task('watch', () => {
     gulp.watch(
         [
             './assets/**/*'
-        ],
-        [
+        ], [
             'default'
         ]
     );
