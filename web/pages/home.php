@@ -33,7 +33,7 @@
 
       <div class="form-group">
         <label for="prefix">Tables prefix (optional)</label>
-        <input type="password" class="form-control" id="prefix" placeholder="The database prefix (optional)">
+        <input type="text" class="form-control" id="prefix" placeholder="The database prefix (optional)">
       </div>
 
       <div class="form-group">

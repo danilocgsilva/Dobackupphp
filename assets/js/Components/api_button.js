@@ -9,7 +9,8 @@
             host:   $("#host").val(),
             user:   $("#user").val(),
             dbname: $("#dbname").val(),
-            pass:   $("#pass").val()
+            pass:   $("#pass").val(),
+            prefix: $("#prefix").val()
         }
 
         $.ajax({

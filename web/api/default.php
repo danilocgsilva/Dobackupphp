@@ -11,5 +11,6 @@ $folder_to_write = getcwd() . DIRECTORY_SEPARATOR . 'backupfiles';
     $valuesArray['user'],
     $valuesArray['dbname'],
     $valuesArray['pass'],
-    $folder_to_write
+    $folder_to_write,
+    $valuesArray['prefix']
 );

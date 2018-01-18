@@ -130,6 +130,7 @@ class IndexSecure
             case 'user':
             case 'dbname':
             case 'pass':
+            case 'prefix':
                 continue;
             default:
                 $this->diethis();
@@ -150,6 +151,7 @@ class IndexSecure
         $hostValues['user']   = $this->_getArray['user'];
         $hostValues['dbname'] = $this->_getArray['dbname'];
         $hostValues['pass']   = $this->_getArray['pass'];
+        $hostValues['prefix'] = $this->_getArray['prefix'];
 
         return $hostValues;
     }
