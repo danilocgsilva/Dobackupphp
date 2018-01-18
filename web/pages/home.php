@@ -32,6 +32,11 @@
       </div>
 
       <div class="form-group">
+        <label for="prefix">Tables prefix (optional)</label>
+        <input type="password" class="form-control" id="prefix" placeholder="The database prefix (optional)">
+      </div>
+
+      <div class="form-group">
         <label for="pass">User password</label>
         <input type="password" class="form-control" id="pass" placeholder="Enter user password">
       </div>
