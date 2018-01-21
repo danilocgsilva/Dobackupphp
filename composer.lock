@@ -8,17 +8,20 @@
     "packages": [
         {
             "name": "danilocgsilva/backupphp",
-            "version": "1.0.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danilocgsilva/Backupphp.git",
-                "reference": "9316b23d8ed77336352059dae007e7748f94e77d"
+                "reference": "9d034508a08a8e968abb97032bf73261bc5d3a40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danilocgsilva/Backupphp/zipball/9316b23d8ed77336352059dae007e7748f94e77d",
-                "reference": "9316b23d8ed77336352059dae007e7748f94e77d",
+                "url": "https://api.github.com/repos/danilocgsilva/Backupphp/zipball/9d034508a08a8e968abb97032bf73261bc5d3a40",
+                "reference": "9d034508a08a8e968abb97032bf73261bc5d3a40",
                 "shasum": ""
+            },
+            "require": {
+                "php": "~5.4 | ^7.0"
             },
             "type": "library",
             "autoload": {
@@ -44,7 +47,7 @@
                 "backup",
                 "mysql"
             ],
-            "time": "2018-01-18T03:15:51+00:00"
+            "time": "2018-01-20T16:36:48+00:00"
         }
     ],
     "packages-dev": [],
