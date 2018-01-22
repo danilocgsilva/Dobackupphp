@@ -8,3 +8,5 @@ composer install
 composer update
 npm install
 gulp
+
+echo Finished!
