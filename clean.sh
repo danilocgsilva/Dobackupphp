@@ -8,6 +8,7 @@ rm -rvf .git*
 rm gulpfile.js
 rm LICENSE
 rm -rvf package*
+rm -rvf node_modules
 rm README.md
 rm -rvf .sass-cache
 rm -rvf .vscode
