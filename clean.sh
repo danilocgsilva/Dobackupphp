@@ -12,4 +12,5 @@ rm -rvf node_modules
 rm README.md
 rm -rvf .sass-cache
 rm -rvf .vscode
-
+rm install_all.sh
+rm clean.sh
